@@ -1,0 +1,15 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+    
