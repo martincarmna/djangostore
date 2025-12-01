@@ -5,4 +5,4 @@ class CategoryForms(forms.ModelFrom):
 
     class Meta:
         model = Category
-        filds = '__all__'
+        fields = '__all__'
