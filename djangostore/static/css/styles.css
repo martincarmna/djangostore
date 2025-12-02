@@ -1,10 +1,14 @@
 * {
     margin: 0%;
     padding: 0%;
-}
+    background-image: url("./static/css/luna.png");
+    background-size: cover;
+    background-position: center;
+    }
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+}
 
 .container{
     width: 100%;
@@ -20,3 +24,4 @@ div.category-list{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
 }
+

@@ -15,11 +15,12 @@
         <tbody>
             {% for cat in categories %}
             <tr>
-                <td><a href="">{{ cat.id }}</a></td>
+                <td><a href="{% url 'products:category_detail' cat.id %}">{{ cat.id }}</a></td>
                 <td>{{ cat.category }}</td>
                 <td>
-                    <a href="">Update 📝</a>
-                    <form action="" method="post">
+                    <a href="{% url 'products:category_update' cat.id %}">Update 📝</a>
+                    <form action="{% url 'products:category_delete' cat.id %}" method="post">
+                        {% csrf_token %}
                         <input type="submit" value="Delete 🗑️">
                     </form>
                 </td>
