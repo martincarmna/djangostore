@@ -1,0 +1,30 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+    <div>
+        <h1> Categorias de productos</h1>
+        <a href="{% url 'products:category_new' %}">Nueva categoria</a>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>nombre</th>
+                <th>Categoria</th>
+            </tr>
+        </table>
+        <tbody>
+            {% for cat in categories %}
+            <tr>
+                <td><a href="">{{ cat.id }}</a></td>
+                <td>{{ cat.category }}</td>
+                <td>
+                    <a href="">Update 📝</a>
+                    <form action="" method="post">
+                        <input type="submit" value="Delete 🗑️">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </div>
+{% endblock %}

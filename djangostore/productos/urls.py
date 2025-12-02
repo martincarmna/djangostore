@@ -1,8 +1,8 @@
 from django.urls import path
 
-from djangostore import views
+from . import views
 
-app_namr = 'products'
+app_name = 'products'
 
 urlpatterns = [
     path('', views.index ,name='index'),
